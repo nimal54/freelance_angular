@@ -10,7 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { DemoPageComponent } from './pages/demo-page/demo-page.component';
-import { UtilityCardComponent } from './Cards/utility-card/utility-card.component';
+import { UtilityCardComponent } from './components/Cards/utility-card/utility-card.component';
 @NgModule({
   declarations: [
     AppComponent,
