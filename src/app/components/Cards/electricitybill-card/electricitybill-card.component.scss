@@ -1,0 +1,21 @@
+:host ::ng-deep .p-dropdown {
+  width: 14rem;
+}
+
+.country-item-value {
+  img.flag {
+      width: 17px;
+  }
+}
+
+
+.parent {
+  width: 100px; /* I took the width from your post and placed it in css */
+  height: 50px;
+}
+
+/* This will style any <img> element in .parent div */
+.parent img {
+  height: 100%;
+  width: 100%;
+}

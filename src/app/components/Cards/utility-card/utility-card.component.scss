@@ -1,39 +1,23 @@
-.sbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px;
-  padding: 16px;
-  border-radius: 5px;
-  height: 100px;
-  background-color: #ffffff;
-  justify-content:space-evenly;
+.parent {
+  width: 100px; /* I took the width from your post and placed it in css */
+  height: 50px;
 }
 
-.mat-tab-group {
-  margin-bottom: 48px;
+/* This will style any <img> element in .parent div */
+.parent img {
+  height: 100%;
+  width: 100%;
 }
-.paddingDiv{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  background-color:rgb(231, 228, 228);
-}
-.contentHeaderDiv{
-  display: flex;
-  justify-content:space-between;
-  padding-left: 5%;
-  padding-right: 5%; 
-  padding-top: 10px;
-}
-.example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
-.confirm-btn{
-  padding-left: 20px;
-  font-size: medium;
-  color: white;
-  background-color: rgb(23, 30, 44);
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
 }

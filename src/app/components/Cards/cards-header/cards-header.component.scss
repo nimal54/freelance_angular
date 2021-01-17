@@ -1,0 +1,17 @@
+.ui-tabview {
+  padding: .25em;
+  background-color: blue;
+	text-align: center;
+	.ui-tabview-nav {
+		li {
+      background-color: blue;
+			list-style: none;
+			float: none;
+			position: relative;
+			margin: 0 .125em 1px 0;
+			padding: 0;
+			white-space: nowrap;
+			display: inline-block!important;
+		}
+	}
+}

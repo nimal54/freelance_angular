@@ -1,70 +1,31 @@
-<div class="paddingDiv">
-  <div class="contentHeaderDiv">
-    <h2>Bill Payment
-      <br>
-      <span style="font-size: small; font-weight: 200;">Your Credit : 545$</span>
-    </h2>
-    <span>
-      <a id="myLink" href="https://www.sundaygrids.com/">
-        <img style="width: 130px;" src="/assets/bharatBillPay.png" />
 
-      </a>
-    </span>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<p-toolbar [style]="{'background-color':'white','border':'none','border-radius':'3px'}">
+  <div class="p-toolbar-group-left">
+    <h2 style="color:rgb(45, 31, 50);font-weight: bolder;">Select a Utility</h2>
   </div>
-
-  <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Electricity Bill">
-      <div class="sbox mat-elevation-z4">
-
-        <form [formGroup]="form">
-          <mat-form-field appearance="fill">
-            <mat-label>State</mat-label>
-            <mat-select > <!-- <mat-select [formControl]="stateSelectorController" name="state"> -->
-              <!-- <mat-option>None</mat-option> -->
-              <mat-option *ngFor="let state of stateSelectorList" [value]="state.value">
-                {{state.viewValue}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <mat-form-field appearance="fill">
-            <mat-label>Operator</mat-label>
-            <mat-select ><!-- <mat-select [formControl]="operatorSelectorController" name="operator"> -->
-              <mat-option *ngFor="let operator of operatorSelectorList" [value]="operator.value">
-                {{operator.viewValue}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <mat-form-field appearance="fill">
-            <mat-label>Customer ID</mat-label>
-            <mat-select ><!-- <mat-select [formControl]="operatorSelectorController" name="operator"> -->
-              <mat-option *ngFor="let cusId of cusIdSelectorList" [value]="cusId.value">
-                {{cusId.viewValue}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </form>
-        &nbsp;&nbsp;
-        <button class="confirm-btn" mat-flat-button>Continue</button>
-
-        <!--
-        <mat-form-field appearance="fill">
-          <mat-label>Favorite food</mat-label>
-          <mat-select>
-            <mat-option *ngFor="let food of foods" [value]="food.value">
-              {{food.viewValue}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
--->
-      </div>
-    </mat-tab>
-    <mat-tab label="All Utilities">
-      <div class="sbox mat-elevation-z4">
-        Small content 2
-      </div>
-    </mat-tab>
-  </mat-tab-group>
+  <div class="p-toolbar-group-right" [style]="{'width':'40px','height':'8px'}">
+    <div class="parent">
+      <img src="/assets/bharat.jpg">
+    </div>
+  </div>
+</p-toolbar>
+<br>
+<div class="grid-container" style="width: 100%;display: grid;grid-gap: 10px;justify-content: space-around; ">
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Municipal Taxes</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Entertainment</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Housing Society</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Education</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; LPG Gas</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Fast Tag</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Loan Repayment</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Water</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Insurance</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Landline</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Broadband</button>
+  <button mat-stroked-button style="width: 200px;text-align: left;"><i class="fa fa-bars"></i>&nbsp; Cable TV</button>
 </div>
+<div style="text-align:center;">
+  <button mat-stroked-button style="width: 200px;">More +</button>
+</div>
+<br>
