@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { CountryListsService } from "../../../services/country-lists.service";
 import { CountryLists } from '../../../Modals/country';
-import { ApiServices } from '../../../services/apiservices';
-import { HttpClient } from '@angular/common/http';
-
 
 
 interface stateSelector {
@@ -18,25 +15,28 @@ interface stateSelector {
 })
 export class ElectricitybillCardComponent implements OnInit {
 
+  // stateSelectorList: CountryLists[] = [];
+
   stateSelectorList: stateSelector[] = [
     { value: '0', viewValue: 'Karnadaka' },
     { value: '1', viewValue: 'Kerala' },
     { value: '2', viewValue: 'Maharashra' }
   ];
-  dataArray3: CountryLists[] = [];
   ngOnInit() {
-    console.log("hhsfdgsgfdghmu");
-    //  this.apiService.CountryList().subscribe(data => {this.dataArray3 = data, console.log(data)}
-    //  );
-
-
-    // console.log(this.countryList.CountryName);
-
-
+    // this.getCountryList()
   }
+constructor() {}
+  // constructor(private countryList: CountryListsService, private countryModal : CountryLists) { }
+  // getCountryList() {
+  //   this.countryList.getCountryListData().subscribe((data) => {
+  //     this.stateSelectorList = data['data']
+  //     console.log("ffffffffff");
+  //     console.log(this.stateSelectorList);
 
-  constructor() {
-    // public  countryList : CountryLists, public apiService : ApiServices
 
-  }
+  //     console.log(this.countryList.getCountryListData);
+
+  //   })
+  // }
+
 }

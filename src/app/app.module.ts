@@ -9,19 +9,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/headers/mainHeader/header.component';
 
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { UtilityCardComponent } from './components/Cards/utility-card/utility-card.component';
 import { HomeComponent } from './home/home.component';
 import { SectionTwoComponent } from './components/sections/section-two/section-two.component';
 import { SectionThreeComponent } from './components/sections/section-three/section-three.component';
-import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-import {ToolbarModule} from 'primeng/toolbar';
-import {TabViewModule} from 'primeng/tabview';
+import { ToolbarModule } from 'primeng/toolbar';
+import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
@@ -60,12 +60,12 @@ import { ElectricitybillCardComponent } from './components/Cards/electricitybill
     MatGridListModule,
     MatButtonModule
   ],
-  exports:[
+  exports: [
     MatSelectModule,
     MatButtonModule
   ],
   providers: [
-    {provide:MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearence: 'fill'}}
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearence: 'fill' } }
   ],
   bootstrap: [AppComponent]
 })

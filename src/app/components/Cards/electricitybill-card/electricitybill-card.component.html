@@ -1,20 +1,24 @@
-<p-toolbar [style]="{'background-color':'white','border':'none','border-radius':'3px'}">
+<!-- <p-toolbar [style]="{'background-color':'#FFFFFF','border':'none','border-radius':'3px'}">
   <div class="p-toolbar-group-left">
-    <h2 style="color:rgb(45, 31, 50);font-weight: bolder;">Bill Details</h2>
+    <h2 style="color:#2D1F32;font-weight: 600;font-family: 'Poppins';">Bill Details</h2>
   </div>
   <div class="p-toolbar-group-right" [style]="{'width':'40px','height':'8px'}">
     <div class="parent">
       <img src="/assets/bharat.jpg">
     </div>
   </div>
-</p-toolbar>
+</p-toolbar> -->
 <br>
-<div style="width: 100%;justify-content: space-evenly;display: flex;">
+<div style="margin-left:40px;margin-right:40px;justify-content:space-between;display: flex;">
+  <h2 style="color:#2D1F32;font-weight: 600;font-size:16px;font-family: 'Poppins';">Bill Details</h2>
+  <img class="parent" src="/assets/bharat.png">
+</div>
+<div style="width: 100%;justify-content: space-evenly;display: flex;overflow: hidden;">
   <div>
-    <mat-form-field appearance="fill">
-      <mat-label>State</mat-label>
+    <mat-form-field class="selectorStyle" appearance="outline">
+      <mat-label style="font-family: 'Poppins';background-color: white;">State</mat-label>
       <mat-select>
-        <mat-option *ngFor="let state of stateSelectorList" [value]="state.value">
+        <mat-option style="background-color: white;" *ngFor="let state of stateSelectorList" [value]="state.value">
           {{state.viewValue}}
         </mat-option>
       </mat-select>
@@ -22,8 +26,8 @@
   </div>
 
   <div>
-    <mat-form-field appearance="fill">
-      <mat-label>Operator</mat-label>
+    <mat-form-field class="selectorStyle" appearance="outline">
+      <mat-label style="font-family: 'Poppins';">Operator</mat-label>
       <mat-select>
         <mat-option *ngFor="let state of stateSelectorList" [value]="state.value">
           {{state.viewValue}}
@@ -32,8 +36,8 @@
     </mat-form-field>
   </div>
   <div>
-    <mat-form-field appearance="fill">
-      <mat-label>Customer ID</mat-label>
+    <mat-form-field class="selectorStyle" appearance="outline">
+      <mat-label style="font-family: 'Poppins';">Customer ID</mat-label>
       <mat-select>
         <mat-option *ngFor="let state of stateSelectorList" [value]="state.value">
           {{state.viewValue}}
@@ -45,6 +49,6 @@
 <br>
 <br>
 <div style="align-items: center;display:flex;justify-content: center;width: 100%;">
-  <button mat-stroked-button style="width: 150px;">Continue</button>
+  <button mat-stroked-button style="width: 150px;background-color:#2D1F32;color: white;">Continue</button>
 </div>
 <br>

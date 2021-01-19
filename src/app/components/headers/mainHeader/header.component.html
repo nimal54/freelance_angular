@@ -1,16 +1,20 @@
-<p-toolbar [style]="{'background-color':'rgb(45, 31, 50)','border':'none','border-radius':'0'}">
+<p-toolbar [style]="{'background-color':'#2D1F32','height':'60px','border':'none','border-radius':'0','padding-top': '0px'}">
   <div class="p-toolbar-group-left">
     <span style="padding-left: 75px; padding-top: 10px;">
       <a id="myLink" href="https://www.sundaygrids.com/">
-        <img src="/assets/logo.PNG" />
+        <img src="/assets/logo.png" />
       </a>
     </span>
+    <div style="padding-top: 23px;">
+      <h2 style="font-family: 'Poppins';color: white;font-weight: 600;font-size: 15px;line-height: 22px;"><span style="font-weight: 200;">|</span> Pay</h2>
+    </div>
+
   </div>
 
   <div class="p-toolbar-group-right">
-    <button pButton type="button" style="color:white" label="Benefits" class="p-button-text p-mr-4"></button>
-    <button pButton type="button" (click)="onClickFAQ()" style="color:white" label="FAQ" class="p-button-link p-mr-4"></button>
-    <button pButton type="button" label="Login" style="color:#FFA62E" class="p-button-text p-mr-4"></button>
-    <button pButton type="button" label="Buy Biscuits" style="color:white" class="p-button-outlined p-mr-4"></button>
+    <button pButton type="button" style="color:white; font-weight: 600;font-size: 15px;" label="Benefits" class="p-button-text p-mr-4"></button>
+    <button pButton type="button" (click)="onClickFAQ()" style="font-weight: 600;font-size: 15px;color:white" label="FAQ" class="p-button-link p-mr-4"></button>
+    <button pButton type="button" label="Login" style="font-weight: 600;font-size: 15px;color:#FFA62E" class="p-button-text p-mr-4"></button>
+    <button pButton type="button" label="Buy Biscuits" style="font-weight: 600;font-size: 15px;height: 30px;;color:white" class="p-button-outlined p-mr-4"></button>
   </div>
 </p-toolbar>
